@@ -1,0 +1,104 @@
+.containerLogin {
+  padding: 15px;
+}
+.containerLogin .colImg {
+  height: 35vh;
+}
+.containerLogin .colImg .img {
+  background-color: #76B9ED;
+  height: 60%;
+}
+.containerLogin .colForm {
+  height: 65vh;
+}
+.containerLogin .colForm .form .containerDesc p {
+  color: #ccc;
+  text-align: center;
+}
+.containerLogin .colForm .form .containerDesc .textBold {
+  font-weight: bold;
+  font-size: 14px;
+}
+.containerLogin .colForm .form .containerDesc .textNormal {
+  font-size: 13px;
+  font-weight: lighter;
+}
+.containerLogin .colForm .form .groupInput {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.containerLogin .colForm .form .groupInput label {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.containerLogin .colForm .form .groupInput input {
+  border-radius: 30px;
+  width: 90%;
+  color: #ccc;
+  font-size: 14px;
+  padding: 10px;
+  border: solid 1px #ccc;
+}
+.containerLogin .colForm .form .groupBtnSig {
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.containerLogin .colForm .form .groupBtnSig button {
+  color: #fff;
+  width: 90%;
+  background-color: #76B9ED;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  margin: 0 auto;
+}
+.containerLogin .colForm .form .groupBtnSig .textError {
+  text-align: center;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.containerLogin .colForm .form .groupBtnSig .showTextError {
+  opacity: 1;
+}
+.containerLogin .colForm .form .groupBtnSig a {
+  color: #ccc;
+  text-decoration: underlinen;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  left: 5%;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .containerLogin {
+    display: flex;
+  }
+  .containerLogin .colImg {
+    width: 60%;
+    margin-right: 40px;
+    align-items: center;
+    margin-top: auto;
+    height: 100%;
+  }
+  .containerLogin .colForm {
+    align-items: center;
+    width: calc(100% - (60% + 40px));
+    height: auto;
+    margin-top: 10%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .containerLogin .colImg {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */

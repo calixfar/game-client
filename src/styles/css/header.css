@@ -1,0 +1,48 @@
+.containerHeader {
+  height: 50px;
+  background-color: #049DE0;
+  color: #fff;
+}
+.containerHeader .menuHeader {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  height: 100%;
+}
+.containerHeader .menuHeader li {
+  list-style: none;
+}
+.containerHeader .menuHeader .containerLogo {
+  width: 100px;
+}
+.containerHeader .menuHeader .containerNameUser {
+  display: flex;
+  width: 60%;
+  padding-left: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.containerHeader .menuHeader .containerNameUser img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 30px;
+  margin-right: 5px;
+}
+.containerHeader .menuHeader .headerContainerCoin {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+  padding-right: 15px;
+}
+.containerHeader .menuHeader .btnLogOut {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerHeader .menuHeader .btnLogOut svg {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=header.css.map */

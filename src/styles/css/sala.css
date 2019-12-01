@@ -1,0 +1,130 @@
+.containerSala {
+  height: auto;
+  width: 80%;
+  display: flex;
+  overflow: hidden;
+  border: solid 1px #ccc;
+  border-radius: 30px;
+  box-shadow: 0px 2px 20px 3px #ccc;
+  margin: 0 auto;
+}
+.containerSala:not(:last-child) {
+  margin-bottom: 30px;
+}
+.containerSala .containerRadioButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+.containerSala .containerRadioButton .radioButton {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: solid 1px #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #049DE0;
+}
+.containerSala .containerTitleImg {
+  padding: 10px;
+}
+.containerSala .containerTitleImg .title {
+  margin: 0;
+  font-size: 18px;
+  color: #39414C;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.containerSala .containerTitleImg .containerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerSala .containerTitleImg .containerImg img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+}
+.containerSala .containerInfoRoom {
+  padding: 10px 20px 10px 10px;
+  width: 100%;
+}
+.containerSala .containerInfoRoom .containerHeaderRoom {
+  display: flex;
+  justify-content: flex-end;
+}
+.containerSala .containerInfoRoom .containerHeaderRoom .price {
+  color: #39414C;
+  font-weight: 600;
+  display: flex;
+  margin: 0;
+}
+.containerSala .containerInfoRoom .infoRow {
+  width: 100%;
+  margin-top: 10px;
+}
+.containerSala .containerInfoRoom .infoRow .containerGain {
+  display: flex;
+  justify-content: flex-end;
+  color: #39414C;
+  margin: 0 auto;
+  font-weight: 600;
+}
+.containerSala .containerInfoRoom .containerButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.containerSala .containerInfoRoom .containerButton .buttonEntrar {
+  width: 50%;
+  background-color: #049DE0;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+@media screen and (min-width: 800px) {
+  .containerSala {
+    width: 250px;
+    height: 330px;
+    display: block;
+  }
+  .containerSala .containerRadioButton {
+    width: auto;
+    margin-top: 15px;
+  }
+  .containerSala .containerTitleImg {
+    margin-top: 15px;
+  }
+  .containerSala .containerTitleImg .title {
+    margin-bottom: 10px;
+  }
+  .containerSala .containerTitleImg .containerImg {
+    height: 120px;
+  }
+  .containerSala .containerInfoRoom {
+    margin-top: 10px;
+    display: flex;
+  }
+  .containerSala .containerInfoRoom .containerHeaderRoom {
+    justify-content: center;
+  }
+  .containerSala .containerInfoRoom .infoRow {
+    margin-top: 0;
+  }
+  .containerSala .containerInfoRoom .infoRow .containerGain {
+    margin-right: 25px;
+  }
+  .containerSala .containerInfoRoom .containerButton {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=sala.css.map */

@@ -1,0 +1,21 @@
+.contianerRooms {
+  margin: 30px 0px;
+}
+.contianerRooms .titleRooms {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.contianerRooms .contentRooms {
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  .contianerRooms .contentRooms {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=salas.css.map */

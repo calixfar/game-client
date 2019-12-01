@@ -1,0 +1,87 @@
+.containerLogin
+    padding: 15px
+    .colImg
+        height: 35vh
+        .img
+            background-color: #76B9ED
+            height: 60%
+    .colForm
+        height: 65vh
+        .form
+            .containerDesc
+                p
+                    color: #ccc
+                    text-align: center
+                .textBold
+                    font-weight: bold
+                    font-size: 14px
+                .textNormal
+                    font-size: 13px
+                    font-weight: lighter
+            .groupInput
+                margin-bottom: 20px
+                display: flex
+                justify-content: center
+                label
+                    display: block
+                    font-size: 14px
+                    color: #fff
+                    margin-bottom: 5px
+                input
+                    border-radius: 30px
+                    width: 90%
+                    color: #ccc
+                    font-size: 14px
+                    padding: 10px
+                    border: solid 1px #ccc
+            .groupBtnSig
+                margin-top: 20px
+                font-size: 14px
+                display: flex
+                justify-content: center
+                flex-direction: column
+                button
+                    color: #fff
+                    width: 90%
+                    background-color: #76B9ED
+                    padding: 10px
+                    border-radius: 30px
+                    border: none
+                    margin: 0 auto
+                .textError
+                    text-align: center
+                    transition: all 0.3s
+                    opacity: 0
+                .showTextError
+                    opacity: 1
+                a
+                    color: #ccc
+                    text-decoration: underlinen
+                    font-weight: bold
+                    width: 90%
+                    text-align: center
+                    position: relative
+                    left: 5%
+                    margin-top: 20px
+
+@media only screen and (min-width: 768px)
+    .containerLogin
+        display: flex
+        .colImg
+            width: 60%
+            margin-right: 40px
+            align-items: center
+            margin-top: auto
+            height: 100%
+        .colForm
+            align-items: center
+            width: calc(100% - (60% + 40px))
+            height: auto
+            margin-top: 10%
+@media only screen and (min-width: 1280px)
+    .containerLogin
+        .colImg
+            height: auto
+
+        
+

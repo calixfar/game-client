@@ -1,0 +1,107 @@
+@import _colors
+.containerSala
+    height: auto
+    width: 80%
+    display: flex
+    overflow: hidden
+    border: solid 1px #ccc
+    border-radius: 30px
+    box-shadow: 0px 2px 20px 3px #ccc
+    margin: 0 auto
+    &:not(:last-child)
+        margin-bottom: 30px
+    .containerRadioButton
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 300px
+        .radioButton
+            width: 25px
+            height: 25px
+            border-radius: 50%
+            border: solid 1px #ccc
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #049DE0
+    .containerTitleImg
+        padding: 10px
+        .title
+            margin: 0
+            font-size: 18px
+            color: $fontCardColor
+            font-weight: bold
+            text-align: center
+            letter-spacing: 1px
+        .containerImg
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                object-fit: cover
+                object-position: 50% 50%
+                width: 100%
+    .containerInfoRoom
+        padding: 10px 20px 10px 10px
+        width: 100%
+        .containerHeaderRoom
+            display: flex
+            justify-content: flex-end
+            .price
+                color: $fontCardColor
+                font-weight: 600
+                display: flex
+                margin: 0
+        .infoRow
+            width: 100%
+            margin-top: 10px
+            .containerGain
+                display: flex
+                justify-content: flex-end
+                color: $fontCardColor
+                margin: 0 auto
+                font-weight: 600
+        .containerButton
+            display: flex
+            justify-content: center
+            margin-top: 10px
+            .buttonEntrar
+                width: 50%
+                background-color: #049DE0
+                color: #fff
+                font-weight: bold
+                border-radius: 30px
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 3px
+
+@media screen and ( min-width: 800px  )
+    .containerSala
+        width: 250px
+        height: 330px
+        display: block
+        .containerRadioButton
+            width: auto
+            margin-top: 15px
+        .containerTitleImg
+            margin-top: 15px
+            .title
+                margin-bottom: 10px
+            .containerImg
+                height: 120px
+        .containerInfoRoom
+            margin-top: 10px
+            display: flex
+            .containerHeaderRoom
+                justify-content: center
+            .infoRow
+                margin-top: 0
+                .containerGain
+                    margin-right: 25px
+            .containerButton
+                display: block
+
+
+    
+    
