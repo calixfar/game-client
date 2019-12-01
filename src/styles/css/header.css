@@ -8,6 +8,8 @@
   margin: 0;
   align-items: center;
   height: 100%;
+  padding: 0;
+  padding-left: 10px;
 }
 .containerHeader .menuHeader li {
   list-style: none;
@@ -36,7 +38,7 @@
   padding-right: 15px;
 }
 .containerHeader .menuHeader .btnLogOut {
-  width: 100px;
+  width: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
