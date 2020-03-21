@@ -4,10 +4,6 @@
 .containerLogin .colImg {
   height: 35vh;
 }
-.containerLogin .colImg .img {
-  background-color: #76B9ED;
-  height: 60%;
-}
 .containerLogin .colForm {
   height: 65vh;
 }
@@ -75,6 +71,16 @@
   position: relative;
   left: 5%;
   margin-top: 20px;
+}
+
+.containerImgSlider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.imgSlider {
+  margin: 0 auto;
+  width: 70%;
 }
 
 @media only screen and (min-width: 768px) {

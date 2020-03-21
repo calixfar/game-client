@@ -1,0 +1,1 @@
+export const INGRESAR_USUARIO = 'INGRESAR_USUARIO';

@@ -1,0 +1,52 @@
+.containerRegister {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background-color: #E6E6E6;
+}
+.containerRegister .formRegister {
+  margin: 0 auto;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 30px;
+  padding-top: 10px;
+}
+.containerRegister .formRegister .formTitle {
+  text-align: center;
+  color: #1E323E;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.containerRegister .formRegister .groupInput {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  align-items: center;
+}
+.containerRegister .formRegister .groupInput .labelInput {
+  width: 100px;
+  text-align: start;
+  color: #1E323E;
+  font-size: 14px;
+}
+.containerRegister .formRegister .groupInput .inputSelect {
+  width: 50%;
+  height: 30px;
+  border-radius: 25px;
+}
+.containerRegister .formRegister .groupInput .inputText {
+  width: 50%;
+  height: 30px;
+  border-radius: 25px;
+  border: solid 1px #ccc;
+}
+.containerRegister .formRegister .groupInput .inputSubmit {
+  background-color: #049DE0;
+  height: 30px;
+  color: #fff;
+  border-radius: 25px;
+  width: 70%;
+  border: none;
+}
+
+/*# sourceMappingURL=register.css.map */

@@ -1,67 +1,75 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useContext, useEffect} from 'react'
 import styles from  './../../styles/css/login.css'
-import dataLogin from './../dataLogin/dataLogin'
 import {withRouter} from 'react-router-dom'
+import AuthContext from '../../context/authentication/authContext';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 
+const Login = ({history}) => {   
 
-const Login = ({history, refetchUser}) => {   
-    const [user, setUser] = useState('')
-    const [password, setPassword ] = useState('')
-    const [error, setError ] = useState('')
+    const authContext = useContext(AuthContext);
+    
+    const {msg, auth, loginUser} = authContext;
 
-    useEffect( () => {
-        window.addEventListener('load', () => {
-            localStorage.removeItem('dataUser')
-        })
-    })
-
-    const changeState = (e) => {
-        const {name, value} = e.target
-        console.log(name, value)
-        switch(name){
-            case 'user' : {
-                setUser(value)
-            }
-            case 'password' : {
-                setPassword(value)
-            }
+    useEffect(() => {
+        if(auth) {
+            history.push('/rooms');
         }
-    }
-    const verifyUser = () => {
-        let verify = false;
-        for(let i = 0; i < dataLogin.length; i++){
-            if(dataLogin[i].user === user ) {
-                if(dataLogin[i].password === password){
-                    verify = true;
-                    localStorage.setItem('dataUser', dataLogin[i].user)
-
-                }
-            }
-        }
-        return verify;
-    }
-    const handlerBtnLogin = () => {
-        console.log(verifyUser())
-        if(verifyUser()){
-            setError('true')
+        if(msg !== null) {
+            setError(true);
             setTimeout(() => {
-                refetchUser()
-                history.push('/rooms')
-            }, 1500)
-        } else {
-            setError('false')
+                setError(false)
+            }, 3000);
         }
+    }, [msg, auth, history]);
+
+    const [state, setState] = useState({
+        email: '',
+        password: ''
+    });
+    const {email, password} = state;
+    const [error, setError] = useState(false);
+    const changeState = e => {
+        setState({
+            ...state,
+            [e.target.name]: e.target.value
+        })
+    }
+    const handlerBtnLogin = (e) => {
+        e.preventDefault();
+        if(email.trim() === '' || password.trim() === '') {
+            setError(true);
+            setTimeout(() => {
+                setError(false)
+            }, 3000);
+        }
+        loginUser({email, password});
 
     }
-    console.log(dataLogin)
-    let colorTextEror = error === 'false' ? '#DA4F49' :  '#5AB75B';
-    let textError = error === 'false' ? 'Usuario o contraseña incorrecto' :  'Inicio de sesión exitoso!';
+
+    
+    let colorTextEror = error === true ? '#DA4F49' :  '#5AB75B';
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
     return(
         <div className="containerLogin">
             <div className="colImg">
-                <div className="img">
-
-                </div>
+                <Slider className="slider" {...settings}>
+                    <div className="contianerImgSlider">
+                        <img className="imgSlider" src="/arquivos/trading1.jpg"/>
+                    </div>
+                    <div className="contianerImgSlider">
+                        <img className="imgSlider" src="/arquivos/trading2.jpg"/>
+                    </div>
+                </Slider>
             </div>
             <div className="colForm">
                 <form className="form"> 
@@ -71,17 +79,17 @@ const Login = ({history, refetchUser}) => {
                     </div>
                     <div className="groupInput">
                         {/* <label>Usuario</label> */}
-                        <input onChange={(e) => changeState(e)} name="user" type="text" placeholder="Usuario" requuired/>
+                        <input onChange={changeState} name="email" type="text" placeholder="Email" required/>
                     </div>
                     <div className="groupInput">
                         {/* <label>Usuario</label> */}
-                        <input onChange={(e) => changeState(e)} name="password" type="password" placeholder="Contraseña" requuired/>
+                        <input onChange={changeState} name="password" type="password" placeholder="Contraseña" required/>
                     </div>
                     <div className="groupBtnSig">
-                        <button onClick={() => handlerBtnLogin()} type="button">Entrar</button>
-                        <p style={{color: colorTextEror}} className={`textError ${error !== '' ? 'showTextError': ''}`}>{textError}</p> 
-                            
-                        <a href="/">Registrarme</a>
+                        <button onClick={handlerBtnLogin} type="button">Entrar</button>
+                        <p style={{color: colorTextEror}} className={`textError ${error === true ? 'showTextError': ''}`}>{msg}</p> 
+                        <Link to="/register">Registrarme</Link>
+                        
                     </div>
                 </form>
             </div>

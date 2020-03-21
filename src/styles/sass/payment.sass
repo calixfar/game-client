@@ -1,0 +1,55 @@
+.containerPayment
+    border: solid 1px #ccc
+    margin-bottom: 40px
+    border-radius: 15px
+    .header
+        border-radius: 15px 15px 0 0 
+        background-color: #049DE0
+        padding: 5px
+        .title
+            color: #ffffff
+            font-size: 16px
+            font-weight: 500
+            text-align: center
+    .body
+        padding: 20px 10px 30px 10px
+        .oldPrice
+            text-decoration: line-through
+            color: #ccc
+            font-size: 14px
+            text-align: center
+            margin-bottom: 0
+        .nowPrice
+            font-size: 25px
+            font-weight: 500
+            text-align: center
+            margin-top: 2px
+            color: #000
+        .title
+            font-size: 18px
+            text-align: center
+            .discount
+                font-size: 11px
+                font-weight: bold
+        .btnBuy
+            height: 30px
+            width: 80%
+            margin: 20px auto 0 auto
+            border: solid 1px #ccc
+            border-radius: 15px
+            text-transform: uppercase
+            font-size: 14px
+            background-color: #fff
+            display: flex
+            justify-content: center
+            font-weight: bold
+            &:hover
+                background-color: #049DE0
+                color: #fff
+
+@media only screen and ( min-width: 640px )
+    .containerPayment
+        margin-right: 20px
+@media only screen and ( min-width: 1024px )
+    .containerPayment
+        margin-right: 30px

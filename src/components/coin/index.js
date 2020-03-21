@@ -3,9 +3,9 @@ import  './../../styles/css/coin.css'
 const Coin = ({number}) => {
     return(
         <div className="containerCoin">
-            <div className="textCoin"> 
+            <p className="textCoin"> 
                 {number}
-            </div>
+            </p>
         </div>
     )
 }

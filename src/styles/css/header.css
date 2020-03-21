@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+p, h1, li, span {
+  font-family: "Montserrat";
+}
+
 .containerHeader {
   height: 50px;
   background-color: #049DE0;
@@ -16,6 +21,13 @@
 }
 .containerHeader .menuHeader .containerLogo {
   width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerHeader .menuHeader .containerLogo img {
+  width: 40px;
+  height: 40px;
 }
 .containerHeader .menuHeader .containerNameUser {
   display: flex;
@@ -37,6 +49,9 @@
   width: 30%;
   padding-right: 15px;
 }
+.containerHeader .menuHeader .headerContainerCoin .textPlainCoin {
+  display: none;
+}
 .containerHeader .menuHeader .btnLogOut {
   width: 60px;
   display: flex;
@@ -45,6 +60,12 @@
 }
 .containerHeader .menuHeader .btnLogOut svg {
   cursor: pointer;
+}
+
+@media only screen and (min-width: 640px) {
+  .containerHeader .menuHeader .headerContainerCoin .textPlainCoin {
+    display: inline-block;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

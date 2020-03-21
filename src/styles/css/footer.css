@@ -1,7 +1,8 @@
 .containerFooter {
-  position: absolute;
   width: 100%;
+  height: 80px;
   background-color: #2D2D2D;
+  bottom: 0;
 }
 .containerFooter > p {
   font-size: 12px;
