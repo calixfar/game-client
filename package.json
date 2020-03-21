@@ -2,6 +2,9 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "13.7.x"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
