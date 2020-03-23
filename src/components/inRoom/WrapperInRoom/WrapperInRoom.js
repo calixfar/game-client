@@ -1,4 +1,4 @@
-import Reactfrom 'react';
+import React from 'react';
 // import socketIOClient from "socket.io-client";
 
 import InRoom from '../ContentInRoom';
