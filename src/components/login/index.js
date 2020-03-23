@@ -1,6 +1,6 @@
-import React, {useState, useContext, useEffect} from 'react'
-import './../../styles/css/login.css'
-import {withRouter} from 'react-router-dom'
+import React, {useState, useContext, useEffect} from 'react';
+import '../../styles/css/login.css';
+import {withRouter} from 'react-router-dom';
 import AuthContext from '../../context/authentication/authContext';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
