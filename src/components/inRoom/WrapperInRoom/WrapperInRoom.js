@@ -7,7 +7,7 @@ const WrapperInRoom = () => {
     const [data, setData] = useState({});
     useEffect(() => {
         console.log('entro effect')
-        const socket = socketIOClient('http://localhost:4000',  {transports: ['websocket']});
+        const socket = socketIOClient('https://winfast-backend.herokuapp.com/',  {transports: ['websocket']});
         socket.on("message", data => {
             console.log('entro socket', data)
             setData({ response: data });
