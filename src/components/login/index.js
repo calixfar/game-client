@@ -1,5 +1,5 @@
 import React, {useState, useContext, useEffect} from 'react'
-import styles from  './../../styles/css/login.css'
+import './../../styles/css/login.css'
 import {withRouter} from 'react-router-dom'
 import AuthContext from '../../context/authentication/authContext';
 import Slider from 'react-slick';
