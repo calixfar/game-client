@@ -4,8 +4,8 @@ import AuthState from './context/authentication/authState';
 import Login from './components/login';
 import Header from './components/header';
 import Footer from './components/footer';
-// import Salas from './components/salas';
-// import Ranking from './components/ranking';
+import Salas from './components/salas';
+import Ranking from './components/ranking';
 import RegisterUser from './components/registerUser';
 import tokenAuth from './config/tokenAuth';
 // import WrapperInRoom from './components/inRoom';
@@ -40,13 +40,11 @@ function App() {
           <div style={{minHeight: '90vh'}}>
             <Switch>
   <Route exact path="/" render={() => <Login refetchUser={refetchUser} /> }/>
-              {/* <Route exact path="/" render={() => <Example/>}/> */}
-              {/* <Route exact path="/" render={() => <Login refetchUser={refetchUser} />}/>
               <RutaPrivada exact path="/rooms" component={Salas}/>
-              <RutaPrivada exact path="/in-room" component={WrapperInRoom}/>
-              <RutaPrivada exact path="/payments" component={Payments}/>
+              {/* <RutaPrivada exact path="/in-room" component={WrapperInRoom}/>
+              <RutaPrivada exact path="/payments" component={Payments}/> */}
               <Route exact path="/ranking" render={ () => <Ranking/> } />
-              <Route exact path="/register" render={ () => <RegisterUser/> } /> */}
+              <Route exact path="/register" render={ () => <RegisterUser/> } /> 
             </Switch>
           </div>
           <Footer/>
