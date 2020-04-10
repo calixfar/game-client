@@ -9,10 +9,8 @@ import Ranking from './components/ranking';
 import RegisterUser from './components/registerUser';
 import tokenAuth from './config/tokenAuth';
 // import WrapperInRoom from './components/inRoom';
-// import Payments from './components/payments';
+import Payments from './components/payments';
 import RutaPrivada from './components/rutas/RutaPrivada';
-// import Session from './components/HOC-Session'
-// import {withRouter} from 'react-router-dom'
 
 const token = localStorage.getItem('token');
 if(token) {
@@ -42,7 +40,7 @@ function App() {
   <Route exact path="/" render={() => <Login refetchUser={refetchUser} /> }/>
               <RutaPrivada exact path="/rooms" component={Salas}/>
               {/* <RutaPrivada exact path="/in-room" component={WrapperInRoom}/>
-              <RutaPrivada exact path="/payments" component={Payments}/> */}
+              // <RutaPrivada exact path="/payments" component={Payments}/> */}
               <Route exact path="/ranking" render={ () => <Ranking/> } />
               <Route exact path="/register" render={ () => <RegisterUser/> } /> 
             </Switch>
