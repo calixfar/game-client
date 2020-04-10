@@ -16,7 +16,7 @@
     "react-input-color": "^2.0.29",
     "react-plotly.js": "^2.4.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^3.4.1",
     "react-slick": "^0.25.2",
     "react-stripe-checkout": "^2.6.3",
     "slick-carousel": "^1.8.1",
@@ -24,7 +24,7 @@
     "stripe": "^8.29.0"
   },
   "scripts": {
-    "start": "react-scripts --expose-gc --max-old-space-size=8192 && react-scripts start",
+    "start": "react-scripts --max_old_space_size=4096 start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
