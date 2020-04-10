@@ -39,8 +39,8 @@ function App() {
             <Switch>
   <Route exact path="/" render={() => <Login refetchUser={refetchUser} /> }/>
               <RutaPrivada exact path="/rooms" component={Salas}/>
-              {/* <RutaPrivada exact path="/in-room" component={WrapperInRoom}/>
-              // <RutaPrivada exact path="/payments" component={Payments}/> */}
+              {/* <RutaPrivada exact path="/in-room" component={WrapperInRoom}/> */}
+              <RutaPrivada exact path="/payments" component={Payments}/> 
               <Route exact path="/ranking" render={ () => <Ranking/> } />
               <Route exact path="/register" render={ () => <RegisterUser/> } /> 
             </Switch>
