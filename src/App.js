@@ -10,7 +10,7 @@ import RegisterUser from './components/registerUser';
 import tokenAuth from './config/tokenAuth';
 // import WrapperInRoom from './components/inRoom';
 // import Payments from './components/payments';
-// import RutaPrivada from './components/rutas/RutaPrivada';
+import RutaPrivada from './components/rutas/RutaPrivada';
 // import Session from './components/HOC-Session'
 // import {withRouter} from 'react-router-dom'
 
