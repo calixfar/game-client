@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import AuthState from './context/authentication/authState';
-// import Login from './components/login';
+import Login from './components/login';
 import Header from './components/header';
 import Footer from './components/footer';
 // import Salas from './components/salas';
@@ -39,8 +39,8 @@ function App() {
           <Header user={user} logout={logout}  />
           <div style={{minHeight: '90vh'}}>
             <Switch>
-              <Route exact path="/" render={() => <Example/>}/>
-              {/* <Route exact path="/" render={() => <Login refetchUser={refetchUser} />}/>
+  <Route exact path="/" render={() => <Login refetchUser={refetchUser} /> }/>
+              {/* <Route exact path="/" render={() => <Example/>}/> */}
               {/* <Route exact path="/" render={() => <Login refetchUser={refetchUser} />}/>
               <RutaPrivada exact path="/rooms" component={Salas}/>
               <RutaPrivada exact path="/in-room" component={WrapperInRoom}/>
